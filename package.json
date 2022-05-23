@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint .  --fix --color",
-    "prepare": "husky install"
+    "pre":"lint-staged"
+    
   },
   "keywords": [],
   "author": "",

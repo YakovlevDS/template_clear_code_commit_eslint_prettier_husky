@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "precommit": "lint-staged"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +23,9 @@
     "prettier": "^2.6.2"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.{js, jsx}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

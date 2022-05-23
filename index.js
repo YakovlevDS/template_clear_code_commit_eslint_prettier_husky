@@ -7,10 +7,6 @@ const data = {
   city: "Rivc"
 }
 
-const person = { first: name };
-
-console.log(person);
-
-const sayHelloLinting = (fName) => {
-  console.log(`Hello linting, ${fName}`);
-};
+const r=23
+const c=t**2
+console.log("%c 🇪🇦: c ", "font-size:16px;background-color:#ad3a40;color:white;", c)

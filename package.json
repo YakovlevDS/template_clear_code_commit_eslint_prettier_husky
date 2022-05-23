@@ -33,6 +33,6 @@
       "pre-commit": "npm run cs",
       "pre-push": "npm run cs"
     }
-  },
+  }
 
 }

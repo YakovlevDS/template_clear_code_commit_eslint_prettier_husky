@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint .  --fix --color"
+    "lint:fix": "eslint .  --fix --color",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -33,5 +34,4 @@
       "git add"
     ]
   }
-  }
-
+}

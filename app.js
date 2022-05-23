@@ -1,2 +1,2 @@
-var first = 'Kolya';
+const first = 'Kolya';
 console.log(first);

@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint":"eslint .",
-    "lint:fix":"eslint .  --fix --color",
-    "test":"node index",
-    "precommit": "lint-staged",
-    "prepare": "husky install .config/husky"
+    "lint:fix":"eslint .  --fix --color"
   },
   "keywords": [],
   "author": "",
@@ -24,15 +21,16 @@
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2"
   },
+  
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "*.{js, jsx}": [
       "npm run lint:fix",
       "git add"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }

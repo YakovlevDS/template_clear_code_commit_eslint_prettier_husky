@@ -1,2 +1,4 @@
 const first = 'Kolya';
-console.log(first);
+const first1 = 'Kolеya';
+// eslint-disable-next-line no-console
+console.log(first + first1);

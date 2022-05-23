@@ -12,7 +12,7 @@
         "sourceType": "module"
     },
     "rules": {
-     "no-var":"error"   
+    
     },
     "plugins": ["prettier"]
 }

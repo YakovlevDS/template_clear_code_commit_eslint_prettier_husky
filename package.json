@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "prepare": "husky install .config/husky"
   },
   "keywords": [],
   "author": "",
@@ -27,5 +26,11 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks":{
+      "pre-commit": "CI=true npm run eslint --fix"
+    }
   }
+
 }

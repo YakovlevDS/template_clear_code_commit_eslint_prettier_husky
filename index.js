@@ -5,5 +5,5 @@ const data = {
   city: 'Rivc',
   citsy: 'Rivc',
 };
-var t = 3;
-let j = Math.floor(t ** 3);
+const t = 3;
+const j = Math.floor(t ** 3);
